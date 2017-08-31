@@ -8,20 +8,18 @@ This script was designed to be used as an Extension Attribute on Jamf Pro server
   - 15GB of available storage (Apple says 8.8GB for 10.12, I prefer more space)
 
 These last 2 requirements can be modified in the first 2 variables (`MINIMUMRAM` and `MINIMUMSPACE`).
-  - MINIMUMRAM: minimum RAM required, in GB
-  - MINIMUMSPACE: minimum disk space available, in Bytes
+  - REQUIREDMINIMUMRAM: minimum RAM required, in GB
+  - REQUIREDMINIMUMSPACE: minimum disk space available, in GB
  
-To convert GigaBytes to Bytes, multiply the value in GB by 1024, the result by 1024 and again by 1024, for example, for 15GB of disk space:
-  15 * 1024 * 1024 * 1024 = 10737418240 Bytes
 
-## Mac Hardware Requirements
-  - MacBook (Late 2009 or newer)
-  - MacBook Pro (Mid 2010 or newer)
-  - MacBook Air (Late 2010 or newer)
-  - Mac mini (Mid 2010 or newer)
-  - iMac (Late 2009 or newer)
-  - Mac Pro (Mid 2010 or newer)
-
+## Mac Hardware Requirements and equivalent as minimum Model Identifier
+	- MacBook (Late 2009 or newer), ie MacBook6,1
+	- MacBook Pro (Mid 2010 or newer), ie MacBookPro7,1
+	- MacBook Air (Late 2010 or newer), ie MacBookAir3,1
+	- Mac mini (Mid 2010 or newer), ie Macmini4,1
+	- iMac (Late 2009 or newer), ie iMac10,1
+	- Mac Pro (Mid 2010 or newer), ie MacPro5,1
+	- 
 Default compatibility is set to False if no test pass (variable `COMPATIBILITY`)
 
 ## Installation
