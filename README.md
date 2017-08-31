@@ -19,7 +19,7 @@ These last 2 requirements can be modified in the first 2 variables (`MINIMUMRAM`
 	- Mac mini (Mid 2010 or newer), ie Macmini4,1
 	- iMac (Late 2009 or newer), ie iMac10,1
 	- Mac Pro (Mid 2010 or newer), ie MacPro5,1
-	- 
+
 Default compatibility is set to False if no test pass (variable `COMPATIBILITY`)
 
 ## Installation
