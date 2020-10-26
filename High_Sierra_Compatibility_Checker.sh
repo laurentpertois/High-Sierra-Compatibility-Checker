@@ -79,11 +79,11 @@ COMPATIBILITY="False"
 #########################################################################################
 
 # Checks minimum version of the OS before upgrade (10.7.5)
-OSVERSIONMAJOR=$(sw_vers -productVersion | awk -F"." '{ print $2 }')
-OSVERSIONMINOR=$(sw_vers -productVersion | awk -F"." '{ print $3 }')
+OSVERSIONMAJOR=$(sw_vers -buildVersion | cut -c 1-2)
+OSVERSIONMINOR=$(sw_vers -buildVersion | cut -c 3)
 
 # Checks if computer meets pre-requisites for High Sierra
-if [[ "$OSVERSIONMAJOR" -ge 8 && "$OSVERSIONMAJOR" -lt 13 || "$OSVERSIONMAJOR" -eq 7 && "OSVERSIONMINOR" -eq 5 ]]; then
+if [[ "$OSVERSIONMAJOR" -ge 12 && "$OSVERSIONMAJOR" -lt 17 || "$OSVERSIONMAJOR" -eq 11 && "OSVERSIONMINOR" == "G" ]]; then
 	
 	# Transform GB into Bytes
 	GIGABYTES=$((1024 * 1024 * 1024))
